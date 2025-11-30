@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #f5e9d3 100%); /* blanc → beige */
+    color: #5a4c3f; /* beige foncé (pour le texte) */
+}
+
+/* ----- HEADER ----- */
+header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f5e9d3 0%, #ffffff 100%);
+    padding: 10px 20px;
+    box-shadow: 0 2px 20px rgba(155, 128, 102, 0.3); /* beige foncé transparent */
+    border-bottom: 2px solid rgba(155, 128, 102, 0.2);
+}
+
+header .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #fdf9f3 0%, #f2dfc4 100%); /* blanc cassé → beige clair */
+    box-shadow: 0 0 20px rgba(155, 128, 102, 0.4);
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #a08565; /* beige foncé doux */
+    text-shadow: 0 0 10px rgba(160, 133, 101, 0.5);
+    letter-spacing: 2px;
+}
+
+/* ----- CONTENU PRINCIPAL ----- */
+.container {
+    display: flex;
+    min-height: 70vh;
+}
+
+/* Barre latérale */
+.sidebar {
+    background: rgba(245, 233, 211, 0.8); /* beige transparent */
+    width: 250px;
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    padding: 12px 15px;
+    color: #6b5847;
+    background: rgba(210, 190, 160, 0.2); /* beige très clair */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.sidebar li:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(5px);
+}
+
+/* Zone principale */
+main {
+    flex: 1;
+    padding: 40px;
+    background: radial-gradient(circle at center, rgba(210, 190, 160, 0.15) 0%, transparent 70%);
+}
+
+/* ----- PIED DE PAGE ----- */
+footer {
+    background: linear-gradient(135deg, #ffffff 0%, #f5e9d3 100%);
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: #a08565;
+    border-top: 2px solid rgba(155, 128, 102, 0.2);
+    box-shadow: 0 -2px 20px rgba(155, 128, 102, 0.2);
+    display: block;
+    clear: both;
+}
+
+footer a {
+    color: #a08565;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    color: #c4a98b;
+    text-shadow: 0 0 10px rgba(160, 133, 101, 0.6);
+}
+/*main1*/
+#main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5e9d3 100%);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(160,133,101,0.15);
+}
+#main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5e9d3 100%);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(160,133,101,0.15);
+}
+
+/* ---- FORMULAIRE ---- */
+.creation {
+    background: #fdf9f3; /* blanc cassé */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(160,133,101,0.2);
+    border: 1px solid rgba(160,133,101,0.3);
+}
+
+/* Enlever le style du tableau */
+.creation table {
+    border-collapse: collapse;
+}
+
+.creation td {
+    padding: 10px 0;
+}
+
+/* ---- CHAMPS INPUT ---- */
+.creation input {
+    width: 260px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(160,133,101,0.4);
+    background: #ffffff; /* blanc pur */
+    color: #6b5847;      /* beige foncé */
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.creation input:focus {
+    border-color: #a08565;
+    box-shadow: 0 0 10px rgba(160,133,101,0.3);
+}
+
+/* ---- BOUTON ---- */
+.creation button {
+    width: 260px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #a08565;  /* beige foncé */
+    color: #ffffff;       /* blanc */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.creation button:hover {
+    background: #c4a98b; /* beige plus clair */
+    box-shadow: 0 0 12px rgba(160,133,101,0.4);
+}
+/* ---- Conteneur principal ---- */
+main h1 {
+    font-size: 2.5em;
+    color: #a08565; /* beige foncé pour le titre */
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(160, 133, 101, 0.4);
+    font-family: 'Arial', sans-serif;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #5a4c3f; /* beige un peu plus foncé pour le texte */
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* ---- Fond du bloc ---- */
+main {
+    background: linear-gradient(135deg, #ffffff 0%, #f5e9d3 100%); /* blanc → beige */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(160, 133, 101, 0.2);
+    max-width: 800px;
+    margin: 40px auto; /* centre horizontalement */
+}
+
+/* ---- Style responsive ---- */
+@media (max-width: 600px) {
+    main h1 {
+        font-size: 2em;
+    }
+    main p {
+        font-size: 1em;
+    }
+}

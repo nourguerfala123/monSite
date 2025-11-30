@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cree un compt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="controle.js"></script>
+</head>
+<body>
+    <body>
+    <header>
+     <a href="index.html"> <img src="ED.png" alt="Logo EduPlateforme" class="logo" /></a>
+      <a href="index.html"> <h1>EduPlateforme</h1></a>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li><a href="creation.html"> Créer un compte</a></li>
+          <li><a href="connexion.html"> Connexion</a></li>
+         
+        </ul>
+      </aside>
+      <main id="main1">
+           <form class="creation" onsubmit="return verif()">
+            <table>
+                <tr>
+           <td> <input type="text" id="n" placeholder="Votre nom"></td>
+            </tr>
+            <tr>
+            <td><input type="text" id="p" placeholder="Votre prénom"></td></tr>
+            <td><input type="text" id="mot" placeholder="Votre mot de passe"></td></tr>
+            <td><input type="text" id="conf" placeholder="confirmer votre mot de passe"></td></tr>
+            <tr><td><input type="text" id="mail" placeholder="Votre adresse e-mail" title="nomPrenom@gmail.com"></td></tr>
+           <tr> 
+            <td><button type="submit" id="btn_ins"><a href="continue.html">S'inscrire</a></button></td>
+        </tr>
+            </table>
+            </form>
+      </main>
+    </div>
+        <footer>
+      <p><a href="mailto:nourguerfala789@gmail.com">contacte moi</a></p>
+    </footer>
+  </body>
+</body>
+</html>
